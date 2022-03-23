@@ -1777,3 +1777,16 @@ diff --git a/third_party/blink/public/public_features.gni b/third_party/blink/pu
  use_minikin_hyphenation = !is_mac
 --
 2.25.1
+diff --git a/content/browser/browser_interface_binders.cc b/content/browser/browser_interface_binders.cc
+index 8c797ba21f698..558c2d41c104d 100644
+--- a/content/browser/browser_interface_binders.cc
++++ b/content/browser/browser_interface_binders.cc
+@@ -160,7 +160,7 @@
+ #include "content/browser/renderer_host/render_widget_host_view_android.h"
+ #include "services/device/public/mojom/nfc.mojom.h"
+ #include "third_party/blink/public/mojom/hid/hid.mojom.h"
+-#include "third_party/blink/public/mojom/unhandled_tap_notifier/unhandled_tap_notifier.mojom.h"
++// #include "third_party/blink/public/mojom/unhandled_tap_notifier/unhandled_tap_notifier.mojom.h"
+ #else  // BUILDFLAG(IS_ANDROID)
+ #include "content/browser/direct_sockets/direct_sockets_service_impl.h"
+ #include "media/mojo/mojom/speech_recognition_service.mojom.h"
